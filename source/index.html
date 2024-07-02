@@ -10,12 +10,28 @@
 
   <body class="page-body">
     <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <!--<img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg>
+    -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
+    <div class="hero" data-test="hero">
+      <header class="page-header">
+        <div class="container page-header__container">
+          <div class="page-header__logo-wrapper">
+            <picture>
+              <source media="(min-width: 1365px)" type="image/svg+xml" width="130" height="26" srcset="/__spritemap#sprite-logo-view">
+              <source media="(min-width: 768px)" type="image/svg+xml" width="110" height="22" srcset="/__spritemap#sprite-logo-view">
+              <img width="100" height="20" src="/__spritemap#sprite-logo-view" alt="Логотип">
+            </picture>
+          </div>
+          <a class="page-header__phone" href="tel:88005555555">
+            8 800 555-55-55
+          </a>
+        </div>
+      </header>
+    </div>
     <div data-test="about">about</div>
     <div data-test="price">price</div>
     <div data-test="games">games</div>

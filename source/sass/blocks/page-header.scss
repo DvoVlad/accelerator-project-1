@@ -1,0 +1,19 @@
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 18px;
+}
+
+.page-header__phone {
+  text-decoration: none;
+  color: $basewhite;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.page-header__logo-wrapper img {
+  display: block;
+}
