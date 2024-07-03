@@ -1,11 +1,23 @@
 .hero {
   min-height: 412px;
   background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+
+  @include media-tablet {
+    min-height: 574px;
+  }
 }
 
 .hero__promo-wrapper {
   display: none;
   grid-area: promo;
+
+  @include media-tablet {
+    display: block;
+  }
+}
+
+.hero__promo {
+  display: block;
 }
 
 .hero__section {
@@ -15,6 +27,15 @@
     "text   main"
     "button button";
   margin-top: 48px;
+
+  @include media-tablet {
+    margin-top: 0;
+    grid-template-columns: 139px 215px 324px;
+    grid-template-rows: 303px 87px;
+    grid-template-areas:
+      "text main   promo"
+      "text button promo";
+  }
 }
 
 .hero__text {
@@ -30,6 +51,10 @@
   text-align: right;
   padding-right: 21px;
   margin-top: auto;
+
+  @include media-tablet {
+    margin-bottom: auto;
+  }
 }
 
 .hero__main-content {
@@ -42,6 +67,11 @@
 
   h1 {
     margin: 0;
+  }
+
+  @include media-tablet {
+    padding-right: 30px;
+    margin-top: 31px;
   }
 }
 
@@ -57,6 +87,12 @@
   padding: 22px 10px;
   border: 2px solid $basewhite;
   margin-top: 48px;
+
+  @include media-tablet {
+    align-self: start;
+    margin-top: 0;
+    margin-right: 30px;
+  }
 }
 
 .hero__city {
@@ -65,6 +101,11 @@
   line-height: 32px;
   text-align: right;
   font-weight: 600;
+
+  @include media-tablet {
+    font-size: 42px;
+    line-height: 42px;
+  }
 }
 
 .hero__title {
@@ -73,4 +114,9 @@
   line-height: 62px;
   text-align: right;
   font-weight: 600;
+
+  @include media-tablet {
+    font-size: 72px;
+    line-height: 85px;
+  }
 }

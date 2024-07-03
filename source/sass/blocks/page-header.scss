@@ -4,6 +4,11 @@
   align-items: center;
   padding-top: 16px;
   padding-bottom: 18px;
+
+  @include media-tablet {
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
 }
 
 .page-header__phone {
@@ -12,6 +17,11 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 22px;
+
+  @include media-tablet {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .page-header__logo-wrapper img {
