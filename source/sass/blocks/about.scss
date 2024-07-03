@@ -1,29 +1,72 @@
 .about {
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @include media-tablet {
+    padding-top: 60px;
+    padding-bottom: 35px;
+  }
 }
 
-.about__title {
+.about__text-wrapper p {
+  font-size: 14px;
+  line-height: 22px;
+
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 24px;
+    width: 502px;
+    margin: 0 auto;
+  }
+}
+
+.about__text-wrapper p:last-child {
+  margin-bottom: 0;
+}
+
+.about__text-wrapper .about__title {
   margin-top: 0;
   margin-bottom: 12px;
   font-size: 32px;
   font-family: "Alumni Sans", sans-serif;
   line-height: 32px;
+
+  @include media-tablet {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
 }
 
-.about__subtitle {
+.about__text-wrapper .about__subtitle {
   margin-top: 0;
   margin-bottom: 36px;
   font-size: 16px;
   line-height: 20px;
+
+  @include media-tablet {
+    font-size: 20px;
+  }
 }
 
 .about__text-wrapper {
   padding: 0 15px;
+
+  @include media-tablet {
+    padding: 0 45px;
+    text-align: center;
+  }
 }
 
 .about__content-wrapper {
   margin-top: 36px;
+
+  @include media-tablet {
+    position: relative;
+    width: 678px;
+    margin: 30px auto 0;
+    min-height: 430px;
+  }
 }
 
 .about__promo,
@@ -33,6 +76,10 @@
 
 .about__promo {
   margin-bottom: 36px;
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
 }
 
 .about__preview-wrapper {
@@ -46,6 +93,14 @@
     right: 0;
     bottom: 0;
     background-color: rgba(20, 54, 122, 0.5);
+  }
+
+  @include media-tablet {
+    width: 270px;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -89,4 +144,9 @@
 .about__video {
   width: 320px;
   height: 170px;
+
+  @include media-tablet {
+    width: 270px;
+    height: 170px;
+  }
 }
