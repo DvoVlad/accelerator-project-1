@@ -9,6 +9,11 @@
     padding-top: 31px;
     padding-bottom: 31px;
   }
+
+  @include media-desctop {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .page-header__phone {
@@ -21,6 +26,11 @@
   @include media-tablet {
     font-size: 24px;
     line-height: 24px;
+  }
+
+  @include media-desctop {
+    font-size: 26px;
+    line-height: 26px;
   }
 }
 
