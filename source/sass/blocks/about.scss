@@ -1,0 +1,92 @@
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 32px;
+  font-family: "Alumni Sans", sans-serif;
+  line-height: 32px;
+}
+
+.about__subtitle {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.about__text-wrapper {
+  padding: 0 15px;
+}
+
+.about__content-wrapper {
+  margin-top: 36px;
+}
+
+.about__promo,
+.about__preview {
+  display: block;
+}
+
+.about__promo {
+  margin-bottom: 36px;
+}
+
+.about__preview-wrapper {
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 54, 122, 0.5);
+  }
+}
+
+.about__preview-wrapper--no-background {
+  &::before {
+    display: none;
+  }
+}
+
+.about__play {
+  border: none;
+  padding: 0;
+  height: 72px;
+  width: 72px;
+  background: url("../__spritemap#sprite-player-button-view");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+
+  &:hover {
+    background: url("../__spritemap#sprite-player-button-hover-view");
+  }
+
+  &:focus {
+    background: url("../__spritemap#sprite-player-button-focus-view");
+  }
+
+  &:active {
+    background: url("../__spritemap#sprite-player-button-active-view");
+  }
+
+  &:disabled {
+    background: url("../__spritemap#sprite-player-button-disabled-view");
+  }
+}
+
+.about__video {
+  width: 320px;
+  height: 170px;
+}
