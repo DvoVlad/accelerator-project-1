@@ -101,6 +101,28 @@
   border: 2px solid $basewhite;
   margin-top: 48px;
 
+  &:hover {
+    background-color: $basewhite;
+    color: $textadditionalaccent;
+  }
+
+  &:focus {
+    background-color: $basewhite;
+    opacity: 0.8;
+    border: 2px solid $baseblack;
+    color: $textadditionalaccent;
+  }
+
+  &:active {
+    color: $textprimary;
+    background-color: $basewhite;
+    border: 2px solid $basewhite;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
   @include media-tablet {
     align-self: start;
     margin-top: 0;
