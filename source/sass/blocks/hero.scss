@@ -2,3 +2,75 @@
   min-height: 412px;
   background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
 }
+
+.hero__promo-wrapper {
+  display: none;
+  grid-area: promo;
+}
+
+.hero__section {
+  display: grid;
+  grid-template-columns: 134px 156px;
+  grid-template-areas:
+    "text   main"
+    "button button";
+  margin-top: 48px;
+}
+
+.hero__text {
+  grid-area: text;
+  display: flex;
+}
+
+.hero__text p {
+  margin: 0;
+  color: $basewhite;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  padding-right: 21px;
+  margin-top: auto;
+}
+
+.hero__main-content {
+  grid-area: main;
+  color: $basewhite;
+
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.hero__button {
+  grid-area: button;
+  font-size: 12px;
+  line-height: 12px;
+  color: $basewhite;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  padding: 22px 10px;
+  border: 2px solid $basewhite;
+  margin-top: 48px;
+}
+
+.hero__city {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.hero__title {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 62px;
+  line-height: 62px;
+  text-align: right;
+  font-weight: 600;
+}
