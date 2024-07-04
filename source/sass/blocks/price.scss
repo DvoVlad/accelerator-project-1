@@ -106,11 +106,12 @@
           "../img/rogue@2x.png" 2x
         );
       background-repeat: no-repeat;
-      width: 339px;
-      height: 354px;
+      width: 275px;
+      height: 326px;
       position: absolute;
-      bottom: -10px;
+      bottom: -45px;
       right: -208px;
+      transform: rotate(150deg);
     }
   }
 
@@ -119,8 +120,15 @@
     width: 1159px;
 
     &::after {
-      right: -168px;
-      bottom: -60px;
+      width: 321px;
+      height: 384px;
+      right: -200px;
+      bottom: -80px;
+      background-image:
+        image-set(
+          "../img/rogue-desctop@1x.png" 1x,
+          "../img/rogue-desctop@2x.png" 2x
+        );
     }
   }
 }
