@@ -41,6 +41,7 @@
 }
 
 .about__text-wrapper p:last-child {
+  margin-top: 13px;
   margin-bottom: 0;
 }
 
@@ -207,5 +208,13 @@
   @include media-desctop {
     width: 360px;
     height: 230px;
+  }
+}
+
+.about__only-desctop {
+  display: none;
+
+  @include media-desctop {
+    display: block;
   }
 }
