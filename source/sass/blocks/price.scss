@@ -1,0 +1,129 @@
+.price {
+  background-color: $backgroundadditional;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.price__title {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.price__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  margin-bottom: 40px;
+}
+
+.price__tab {
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(16, 38, 84, 0.5);
+  cursor: pointer;
+}
+
+.price__tab--active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: $buttontab;
+  text-underline-offset: 10px;
+  color: $textprimary;
+}
+
+.price__tab-content {
+  display: none;
+}
+
+.price__tab-content--active {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.price__item {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 42px;
+  padding-right: 42px;
+  background-color: $basewhite;
+}
+
+.price__item-title {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: $textprimary;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.price__lessons {
+  color: $textprimary;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.price__section-decor {
+  position: relative;
+  height: 120px;
+  width: 206px;
+  font-size: 80px;
+  line-height: 120px;
+  text-align: center;
+  color: #e8e8e8;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.price__real {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 48px;
+  line-height: 72px;
+  margin: 0;
+  color: $textadditionalaccent;
+  z-index: 2;
+  font-weight: 700;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  &::after {
+    content: " ";
+    background-image: url("../__spritemap#sprite-ruble-view");
+    height: 33px;
+    width: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+  }
+}
+
+.price__button {
+  display: block;
+  border: 2px solid $textprimary;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 12px;
+  box-sizing: border-box;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 25px 10px;
+  min-width: 206px;
+  text-decoration: none;
+  text-align: center;
+}
