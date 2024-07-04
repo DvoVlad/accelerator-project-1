@@ -134,15 +134,23 @@
 }
 
 .price__item {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 42px;
-  padding-right: 42px;
+  padding-top: 43px; /* 50px */
+  padding-bottom: 43px; /* 50px */
+  padding-left: 35px; /* 42px */
+  padding-right: 35px; /* 42px */
   background-color: $basewhite;
   z-index: 2;
+  border: 7px solid $basewhite;
+
+  &:hover,
+  &:has(.price__button:hover),
+  &:has(.price__button:focus) {
+    border-color: transparent;
+    border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 7 stretch;
+  }
 
   @include media-tablet {
-    padding: 65px;
+    padding: 58px;
   }
 
   @include media-desctop {
@@ -206,6 +214,11 @@
     font-size: 100px;
     line-height: 150px;
     height: 150px;
+    margin-bottom: 22px;
+  }
+
+  @include media-desctop {
+    margin-bottom: 17px;
   }
 }
 
@@ -252,4 +265,12 @@
   padding: 25px 10px;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: $basewhite;
+    border-color: $basewhite;
+  }
 }
