@@ -8,6 +8,11 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @include media-desctop {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .games__information {
@@ -24,6 +29,14 @@
   @include media-tablet {
     grid-template-columns: 100px 120px;
   }
+
+  @include media-desctop {
+    grid-template-columns: 168px 172px;
+    padding-top: 60px;
+    padding-bottom: 96px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .games__title {
@@ -34,20 +47,31 @@
   margin: 0;
   grid-area: title;
   color: $basewhite;
+
+  @include media-desctop {
+    font-size: 82px;
+    line-height: 96px;
+  }
 }
 
 .games__date-wrapper {
   grid-area: date;
   padding-left: 37px;
   display: grid;
-  grid-template-columns: 13px 84px;
+  grid-template-columns: 13px 40px;
   grid-template-areas:
     "datetitle datetitle"
     "dateday   date";
   gap: 0 3px;
+  align-self: start;
 
   @include media-tablet {
     padding-left: 20px;
+    grid-template-columns: 13px 84px;
+  }
+
+  @include media-desctop {
+    padding-left: 77px;
   }
 }
 
@@ -79,6 +103,11 @@
   @include media-tablet {
     margin-top: 12px;
   }
+
+  @include media-desctop {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .games__date {
@@ -99,9 +128,14 @@
 .games__time-wrapper {
   grid-area: time;
   padding-left: 37px;
+  align-self: start;
 
   @include media-tablet {
     padding-left: 20px;
+  }
+
+  @include media-desctop {
+    padding-left: 77px;
   }
 }
 
