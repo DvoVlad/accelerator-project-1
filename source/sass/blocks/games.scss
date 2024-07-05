@@ -1,6 +1,13 @@
 .games__container {
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @include media-tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .games__information {
@@ -13,6 +20,10 @@
     "title       time"
     "description description"
     "button      button";
+
+  @include media-tablet {
+    grid-template-columns: 100px 120px;
+  }
 }
 
 .games__title {
@@ -27,13 +38,17 @@
 
 .games__date-wrapper {
   grid-area: date;
-  padding-left: 27px;
+  padding-left: 37px;
   display: grid;
-  grid-template-columns: 13px 40px;
+  grid-template-columns: 13px 84px;
   grid-template-areas:
     "datetitle datetitle"
     "dateday   date";
   gap: 0 3px;
+
+  @include media-tablet {
+    padding-left: 20px;
+  }
 }
 
 .games__date-title {
@@ -45,6 +60,11 @@
   margin: 0;
   color: $basewhite;
   grid-area: datetitle;
+
+  @include media-tablet {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .games__date-day {
@@ -55,6 +75,10 @@
   line-height: 24px;
   margin-top: 2px;
   color: $basewhite;
+
+  @include media-tablet {
+    margin-top: 12px;
+  }
 }
 
 .games__date {
@@ -64,11 +88,21 @@
   line-height: 12px;
   margin-top: 2px;
   color: $basewhite;
+
+  @include media-tablet {
+    font-size: 14px;
+    line-height: 22px;
+    width: 37px;
+  }
 }
 
 .games__time-wrapper {
   grid-area: time;
-  padding-left: 27px;
+  padding-left: 37px;
+
+  @include media-tablet {
+    padding-left: 20px;
+  }
 }
 
 .games__time-title {
@@ -80,6 +114,11 @@
   font-size: 16px;
   line-height: 20px;
   color: $basewhite;
+
+  @include media-tablet {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .games__time {
@@ -99,6 +138,13 @@
   font-size: 16px;
   line-height: 20px;
   color: $basewhite;
+
+  @include media-tablet {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .games__description p {
