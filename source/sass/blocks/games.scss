@@ -227,6 +227,7 @@
   color: $basewhite;
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
 
   &:hover {
     background-color: $basewhite;
@@ -245,6 +246,10 @@
     background-color: $basewhite;
     color: $textprimary;
     border: 2px solid $basewhite;
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 
   @include media-tablet {
