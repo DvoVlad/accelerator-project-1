@@ -2,6 +2,7 @@
   background-color: $backgroundadditional;
   padding-top: 40px;
   padding-bottom: 40px;
+  overflow: hidden;
 
   @include media-tablet {
     padding-top: 60px;
@@ -267,10 +268,21 @@
   text-align: center;
   cursor: pointer;
 
-  &:focus,
   &:hover {
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     color: $basewhite;
+    border-color: $basewhite;
+  }
+
+  &:focus {
+    background: linear-gradient(97.05deg, rgba(237, 2, 51, 0.8) 17.6%, rgba(0, 62, 183, 0.8) 95.31%);
+    color: $basewhite;
+    background-color: #000000;
+  }
+
+  &:active {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: rgba(255, 255, 255, 0.7);
     border-color: $basewhite;
   }
 }

@@ -35,7 +35,7 @@
     grid-template-columns: 168px 172px;
     padding-top: 60px;
     padding-bottom: 96px;
-    padding-left: 80px;
+    padding-left: 79px;
     padding-right: 80px;
   }
 }
@@ -226,6 +226,26 @@
   line-height: 12px;
   color: $basewhite;
   cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $basewhite;
+    color: $textadditionalaccent;
+  }
+
+  &:focus {
+    opacity: 0.8;
+    background-color: $basewhite;
+    color: $textadditionalaccent;
+    border: 2px solid #000000;
+  }
+
+  &:active {
+    opacity: 1;
+    background-color: $basewhite;
+    color: $textprimary;
+    border: 2px solid $basewhite;
+  }
 
   @include media-tablet {
     padding: 25px 10px;
