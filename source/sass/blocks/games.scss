@@ -25,6 +25,7 @@
     "title       time"
     "description description"
     "button      button";
+  grid-auto-rows: min-content;
 
   @include media-tablet {
     grid-template-columns: 100px 120px;
@@ -72,6 +73,7 @@
 
   @include media-desctop {
     padding-left: 77px;
+    grid-template-columns: 21px 71px;
   }
 }
 
@@ -88,6 +90,10 @@
   @include media-tablet {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @include media-desctop {
+    padding-bottom: 5px;
   }
 }
 
@@ -107,6 +113,7 @@
   @include media-desctop {
     font-size: 40px;
     line-height: 40px;
+    margin-top: 8px;
   }
 }
 
@@ -122,6 +129,10 @@
     font-size: 14px;
     line-height: 22px;
     width: 37px;
+  }
+
+  @include media-desctop {
+    margin-top: 6px;
   }
 }
 
@@ -152,6 +163,12 @@
   @include media-tablet {
     font-size: 18px;
     line-height: 24px;
+    margin-top: 10px;
+  }
+
+  @include media-desctop {
+    margin-top: 0;
+    padding-bottom: 5px;
   }
 }
 
@@ -162,6 +179,12 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
+
+  @include media-desctop {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 6px;
+  }
 }
 
 .games__description {
@@ -178,6 +201,11 @@
     line-height: 24px;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  @include media-desctop {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -196,4 +224,12 @@
   line-height: 12px;
   color: $basewhite;
   cursor: pointer;
+
+  @include media-tablet {
+    padding: 24px 10px;
+  }
+
+  @include media-desctop {
+    padding: 26px 10px;
+  }
 }
