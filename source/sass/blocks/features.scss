@@ -1,0 +1,102 @@
+.features {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.features__title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.features__item-data-wrapper {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.features__item-data-wrapper span {
+  color: #2e35ac;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.features__item-data-wrapper p {
+  margin: 0 auto;
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 98px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.features__item-text-wrapper {
+  text-align: center;
+}
+
+.features__item-text-wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: $textprimary;
+}
+
+.features__item-text-wrapper p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.features__item-text-wrapper p:last-child {
+  margin-bottom: 0;
+}
+
+.features__main-item {
+  background-color: $backgroundblocksadditional;
+  color: $basewhite;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 75px;
+  padding-right: 75px;
+  text-align: center;
+}
+
+.features__main-item-data-wrapper p {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.features__main-item-data-wrapper span {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.features__main-item-data-wrapper {
+  margin-bottom: 20px;
+}
+
+.features__main-item-text-wrapper p {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.features__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 35px 0;
+}
