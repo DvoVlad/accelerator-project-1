@@ -95,7 +95,8 @@
     display: none;
   }
 
-  &:hover .juri__card {
+  &:hover .juri__card,
+  &:focus .juri__card {
     display: block;
     position: absolute;
     left: 0;
@@ -156,4 +157,9 @@
 .juri__list-item {
   font-size: 14px;
   line-height: 22px;
+  margin-bottom: 12px;
+}
+
+.juri__list-item:last-child {
+  margin-bottom: 0;
 }
