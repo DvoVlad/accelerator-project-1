@@ -87,6 +87,8 @@
 
 .about__text-wrapper {
   padding: 0 15px;
+  width: 290px;
+  margin: 0 auto;
 
   @include media-tablet {
     padding: 0 45px;
@@ -102,6 +104,9 @@
 
 .about__content-wrapper {
   margin-top: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
 
   @include media-tablet {
     position: relative;

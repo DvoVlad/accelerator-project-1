@@ -36,10 +36,14 @@
 }
 
 .features__item {
+  width: 320px;
+  margin: 0 auto;
+
   @include media-tablet {
     display: grid;
     gap: 0 15px;
     grid-template-columns: min-content 1fr;
+    margin: 0;
   }
 
   @include media-desctop {
@@ -109,7 +113,7 @@
   }
 }
 
-.features__item-text-wrapper h2 {
+.features__item-text-wrapper h3 {
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: 400;
@@ -234,11 +238,16 @@
   font-size: 14px;
   line-height: 22px;
   font-weight: 300;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 170px;
 
   @include media-tablet {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @include media-desctop {
+    max-width: 280px;
   }
 }
 
