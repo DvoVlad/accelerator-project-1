@@ -532,30 +532,44 @@
         <h2 class="offers__title">
           Акции
         </h2>
-        <div class="offers__main-wrapper">
-          <div class="offers__main">
-            <div class="offers__year-wrapper">
-              <p>Год</p>
-              <span>4999</span>
+        <div class="offers__wrapper">
+          <div class="offers__main-wrapper">
+            <div class="offers__main">
+              <div class="offers__year-wrapper">
+                <p>Год</p>
+                <span>4999</span>
+              </div>
+              <div class="offers__text-wrapper">
+                <p>Безлимитный абонемент в тренажёрный зал</p>
+              </div>
+              <a href="#" class="offers__button">подробнее</a>
             </div>
-            <div class="offers__text-wrapper">
-              <p>Безлимитный абонемент в тренажёрный зал</p>
+            <div class="offers__image-wrapper">
+              <picture>
+                <source media="(min-width: 1365px)" width="280" height="460" type="image/webp" srcset="./img/offer-desctop@1x.webp 1x, ./img/offer-desctop@2x.webp 2x">
+                <source media="(min-width: 1365px)" width="280" height="460" type="image/jpg" srcset="./img/offer-desctop@1x.jpg 1x,
+                images/offer-desctop@2x.jpg 2x">
+                <source media="(min-width: 768px)" width="400" height="462" type="image/webp" srcset="./img/offer-tablet@1x.webp 1x, ./img/offer-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" width="400" height="462" type="image/jpg" srcset="./img/offer-tablet@1x.jpg 1x,
+                images/offer-tablet@2x.jpg 2x">
+                <source width="320" height="360" type="image/webp" srcset="./img/offer-mobile@1x.webp 1x,
+                images/offer-mobile@2x.webp 2x">
+                <img class="offers__image" width="320" height="360" src="./img/offer-mobile@1x.jpg" alt="Акции" srcset="./img/offer-mobile@1x.jpg 1x,
+                images/offer-mobile@2x.jpg 2x">
+              </picture>
             </div>
-            <a href="#" class="offers__button">подробнее</a>
           </div>
-          <div class="offers__image-wrapper">
-            <picture>
-              <source media="(min-width: 1365px)" width="280" height="460" type="image/webp" srcset="./img/offer-desctop@1x.webp 1x, ./img/offer-desctop@2x.webp 2x">
-              <source media="(min-width: 1365px)" width="280" height="460" type="image/jpg" srcset="./img/offer-desctop@1x.jpg 1x,
-              images/offer-desctop@2x.jpg 2x">
-              <source media="(min-width: 768px)" width="400" height="462" type="image/webp" srcset="./img/offer-tablet@1x.webp 1x, ./img/offer-tablet@2x.webp 2x">
-              <source media="(min-width: 768px)" width="400" height="462" type="image/jpg" srcset="./img/offer-tablet@1x.jpg 1x,
-              images/offer-tablet@2x.jpg 2x">
-              <source width="320" height="360" type="image/webp" srcset="./img/offer-mobile@1x.webp 1x,
-              images/offer-mobile@2x.webp 2x">
-              <img class="offers__image" width="320" height="360" src="./img/offer-mobile@1x.jpg" alt="Акции" srcset="./img/offer-mobile@1x.jpg 1x,
-              images/offer-mobile@2x.jpg 2x">
-            </picture>
+          <div class="offers__item-wrapper">
+            <div class="offers__item">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент в подарок</p>
+              <a href="#" class="offers__button offers__button--primary">подробнее</a>
+            </div>
+            <div class="offers__item">
+              <h3>Скидка 20%</h3>
+              <p>Корпоративный фитнес с командой</p>
+              <a href="#" class="offers__button offers__button--primary">подробнее</a>
+            </div>
           </div>
         </div>
       </section>
