@@ -1,13 +1,14 @@
 // https://swiperjs.com/get-started#installation
-import Swiper from 'swiper';
+/*import Swiper from 'swiper';
 import {Navigation, Pagination} from 'swiper/modules';
-import 'swiper/css';
+import 'swiper/css';*/
+import Swiper from './vendor/swiper-bundle';
 import './video';
 import './aboniment-tabs';
+import './faq-tabs';
 
 new Swiper('.juri__swiper', {
   // configure Swiper to use modules
-  modules: [Navigation, Pagination],
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -31,3 +32,4 @@ new Swiper('.juri__swiper', {
   },
   breakpointsBase: 'container'
 });
+

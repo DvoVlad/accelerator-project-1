@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/swiper";
 
 /* GLOBAL */
 @import "./common/variables";
@@ -20,3 +21,4 @@
 @import "./blocks/juri";
 @import "./blocks/features";
 @import "./blocks/offers";
+@import "./blocks/faq";

@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
     const tabNumber = e.target.dataset.open;
     const oldActiveContent = document.querySelector('.price__tab-content--active');
     oldActiveContent.classList.remove('price__tab-content--active');
-    const newActiveContent = document.querySelector(`[data-tab="${tabNumber}"]`);
+    const newActiveContent = document.querySelector(`.price__tab-content[data-tab="${tabNumber}"]`);
     newActiveContent.classList.add('price__tab-content--active');
   });
 });

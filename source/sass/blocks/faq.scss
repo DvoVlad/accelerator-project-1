@@ -1,0 +1,112 @@
+.faq {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: $backgroundadditional;
+}
+
+.faq__title {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.faq__tabs {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 10px;
+}
+
+.faq__tab {
+  border: 1px solid rgba(16, 38, 84, 0.2);
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 15px 22px;
+  font-weight: 400;
+  color: $textprimary;
+  cursor: pointer;
+}
+
+.faq__tab--active {
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: $basewhite;
+  border-color: transparent;
+}
+
+.faq__tab-content {
+  display: none;
+}
+
+.faq__tab-content--active {
+  display: block;
+  margin-top: 35px;
+}
+
+.faq__accordeon h3 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 238px;
+}
+
+.faq__accordeon p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  max-width: 238px;
+  margin: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s;
+}
+
+.faq__title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: margin 1s;
+  margin: 0;
+}
+
+.faq__accordeon--active .faq__title-wrapper {
+  margin-bottom: 20px;
+}
+
+.faq__accordeon-button {
+  border: none;
+  width: 30px;
+  height: 30px;
+  background: url("../__spritemap#sprite-faq-plus-view");
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 0;
+  cursor: pointer;
+}
+
+.faq__accordeon {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #74819c;
+  box-sizing: border-box;
+}
+
+.faq__accordeon:first-child {
+  border-top: 1px solid #74819c;
+}
+
+.faq__accordeon--active {
+  max-height: max-content;
+}
+
+.faq__accordeon--active .faq__accordeon-button {
+  background: url("../__spritemap#sprite-faq-minus-view");
+}
