@@ -1,0 +1,6 @@
+.form-contacts-wrapper {
+  @include media-desctop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -771,7 +771,65 @@
         </div>
       </section>
     </div>
-    <div data-test="form">form</div>
+    <div data-test="form">
+      <div class="form-contacts-wrapper">
+        <section class="form">
+          <div class="form__wrapper">
+            <h2 class="form__title">
+              Бесплатное занятие
+            </h2>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <div class="form__input-wrapper">
+                <label><span class="visually-hidden">Имя</span><input class="form__input" type="text" required placeholder="Имя"></label>
+                <label><span class="visually-hidden">Телефон</span><input class="form__input" type="text" required placeholder="Телефон"></label>
+              </div>
+              <input class="form__submit" type="submit" value="отправить">
+            </form>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__wrapper">
+            <h2 class="contacts__title">
+              Контакты
+            </h2>
+            <div class="contacts__data-wrapper">
+              <div class="contacts__data-collumn">
+                <ul class="contacts__data-list">
+                  <li class="contacts__data-item">
+                    <h3 class="contacts__list-title">
+                      Адрес:
+                    </h3>
+                    <address class="contacts__list-data">г. Омск, ул. 60 лет Октября, 7</address>
+                  </li>
+                  <li class="contacts__data-item">
+                    <h3 class="contacts__list-title">
+                      График работы:
+                    </h3>
+                    <p class="contacts__list-data">Пн-Вс: с 8:00 до 22:00</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__data-collumn">
+                <ul class="contacts__data-list">
+                  <li class="contacts__data-item">
+                    <h3 class="contacts__list-title">
+                      Телефон:
+                    </h3>
+                    <a class="contacts__list-data" href="tel:88005555555">8 800 555-55-55</a>
+                  </li>
+                  <li class="contacts__data-item">
+                    <h3 class="contacts__list-title">
+                      Email:
+                    </h3>
+                    <a class="contacts__list-data" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
     <div data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>
   </body>

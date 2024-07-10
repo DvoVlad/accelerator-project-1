@@ -1,0 +1,88 @@
+.form {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: $backgrounddark;
+
+  @include media-tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.form__title {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  color: $basewhite;
+  margin-top: 0;
+  margin-bottom: 36px;
+
+  @include media-tablet {
+    text-align: center;
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.form__wrapper {
+  width: 290px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include media-tablet {
+    width: 440px;
+    padding: 0 164px;
+  }
+}
+
+.form__input-wrapper {
+  @include media-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 36px;
+  }
+}
+
+.form__input {
+  display: block;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  width: 100%;
+  margin-bottom: 38px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 22px;
+  color: $basewhite;
+  box-sizing: border-box;
+  padding: 0;
+  padding-bottom: 4px;
+
+  @include media-tablet {
+    width: 205px;
+    margin: 0;
+  }
+}
+
+.form__input::placeholder {
+  font-weight: 300;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form__submit {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid $basewhite;
+  color: $basewhite;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  padding: 22px 10px;
+}
