@@ -10,8 +10,8 @@ import './faq-tabs';
 new Swiper('.juri__swiper', {
   // configure Swiper to use modules
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.juri__slider-next',
+    prevEl: '.juri__slider-prev',
   },
   loop: true,
   breakpoints: {
@@ -31,5 +31,15 @@ new Swiper('.juri__swiper', {
     }
   },
   breakpointsBase: 'container'
+});
+
+new Swiper('.reviews__swiper', {
+  // configure Swiper to use modules
+  navigation: {
+    nextEl: '.reviews__slider-next',
+    prevEl: '.reviews__slider-prev',
+  },
+  loop: false,
+  slidesPerView: 1
 });
 

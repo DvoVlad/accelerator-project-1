@@ -444,13 +444,13 @@
             </div>
           </div>
           <!-- If we need navigation buttons -->
-          <button class="juri__slide-prev swiper-button-prev" type="button">
+          <button class="juri__slider-prev swiper-button-prev" type="button">
             <span class="visually-hidden">Назад</span>
             <svg class="social-icon" viewBox="0 0 16 32" width="16" height="32">
               <use href="/__spritemap#sprite-arrow-left"></use>
             </svg>
           </button>
-          <button class="juri__slide-next swiper-button-next" type="button">
+          <button class="juri__slider-next swiper-button-next" type="button">
             <span class="visually-hidden">Вперед</span>
             <svg class="social-icon" viewBox="0 0 16 32" width="16" height="32">
               <use href="/__spritemap#sprite-arrow-right"></use>
@@ -711,7 +711,44 @@
         </div>
       </section>
     </div>
-    <div data-test="reviews">reviews</div>
+    <div data-test="reviews">
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__buttons-wrapper">
+          <div class="reviews__swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="reviews__swiper-wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="reviews__slide swiper-slide">
+                <div class="reviews__image-wrapper">
+                  <picture>
+
+                  </picture>
+                </div>
+                <div class="reviews__text-wrapper">
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+              </div>
+              <div class="reviews__slide swiper-slide">Slide 2</div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <button class="reviews__slider-prev swiper-button-prev">
+            <span class="visually-hidden">Назад</span>
+            <svg class="social-icon" viewBox="0 0 16 32" width="16" height="32">
+              <use href="/__spritemap#sprite-arrow-left"></use>
+            </svg>
+          </button>
+          <button class="reviews__slider-next swiper-button-next">
+            <span class="visually-hidden">Вперед</span>
+            <svg class="social-icon" viewBox="0 0 16 32" width="16" height="32">
+              <use href="/__spritemap#sprite-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>

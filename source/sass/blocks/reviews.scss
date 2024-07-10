@@ -1,0 +1,40 @@
+.reviews {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.reviews__title {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  color: $textprimary;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.reviews__slider-prev {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+.reviews__slider-next {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+.reviews__swiper {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.reviews__slide {
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+  background-color: $backgroundblocksadditional;
+  padding: 30px 25px;
+  color: $basewhite;
+  box-sizing: border-box;
+}
