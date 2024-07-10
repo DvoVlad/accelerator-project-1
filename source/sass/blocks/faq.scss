@@ -149,6 +149,14 @@
   margin: 0;
 }
 
+.faq__title-wrapper br {
+  display: none;
+
+  @include media-mobile {
+    display: block;
+  }
+}
+
 .faq__accordeon--active .faq__title-wrapper {
   margin-bottom: 20px;
 
@@ -185,6 +193,11 @@
   box-sizing: border-box;
 
   @include media-tablet {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  @include media-desctop {
     padding-top: 23px;
     padding-bottom: 22px;
   }
