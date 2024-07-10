@@ -18,17 +18,47 @@
   display: none;
   background-color: transparent;
   border: none;
+  padding: 0;
+
+  @include media-tablet {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
 }
 
 .reviews__slider-next {
   display: none;
   background-color: transparent;
   border: none;
+  padding: 0;
+
+  @include media-tablet {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
 }
 
 .reviews__swiper {
   width: 240px;
   margin: 0 auto;
+
+  @include media-tablet {
+    width: 500px;
+  }
+
+  @include media-desctop {
+    width: 560px;
+  }
 }
 
 .reviews__slide {
@@ -37,4 +67,81 @@
   padding: 30px 25px;
   color: $basewhite;
   box-sizing: border-box;
+
+  @include media-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 30px;
+  }
+
+  @include media-desctop {
+    padding: 60px;
+    gap: 30px;
+  }
+}
+
+.reviews__image-wrapper img {
+  display: block;
+  margin: 0 auto 10px;
+
+  @include media-tablet {
+    margin: 0;
+  }
+}
+
+.reviews__text-wrapper {
+  text-align: center;
+
+  @include media-tablet {
+    width: 320px;
+    text-align: left;
+  }
+
+  @include media-desctop {
+    width: 330px;
+  }
+}
+
+.reviews__text-wrapper h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+
+  @include media-tablet {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.reviews__text-wrapper p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.reviews__buttons-wrapper {
+  @include media-tablet {
+    width: 678px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  @include media-desctop {
+    width: 768px;
+  }
+}
+
+.reviews__slider-prev.swiper-button-disabled,
+.reviews__slider-next.swiper-button-disabled {
+  opacity: 0.3;
 }

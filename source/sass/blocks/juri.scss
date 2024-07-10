@@ -34,6 +34,7 @@
   display: none;
   background-color: transparent;
   border: none;
+  padding: 0;
 
   @include media-tablet {
     display: block;
@@ -50,6 +51,7 @@
   display: none;
   background-color: transparent;
   border: none;
+  padding: 0;
 
   @include media-tablet {
     display: block;
