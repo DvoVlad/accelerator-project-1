@@ -1,17 +1,22 @@
+const startedAccordions = document.querySelectorAll('.faq__accordeon');
+
+const initialize = () => {
+  for (let i = 0; i < startedAccordions.length; i++) {
+    const text = startedAccordions[i].querySelector('p');
+    if(startedAccordions[i].classList.contains('faq__accordeon--active')) {
+      text.style.maxHeight = `${text.scrollHeight}px`;
+    } else {
+      text.style.maxHeight = '0';
+    }
+  }
+};
+
+window.addEventListener('resize', () => {
+  initialize();
+});
+
 window.addEventListener('load', () => {
   const accordeonButtons = document.querySelectorAll('.faq__accordeon-button');
-  const startedAccordions = document.querySelectorAll('.faq__accordeon');
-
-  const initialize = () => {
-    for (let i = 0; i < startedAccordions.length; i++) {
-      const text = startedAccordions[i].querySelector('p');
-      if(startedAccordions[i].classList.contains('faq__accordeon--active')) {
-        text.style.maxHeight = `${text.scrollHeight}px`;
-      } else {
-        text.style.maxHeight = '0';
-      }
-    }
-  };
 
   const tabs = document.querySelector('.faq__tabs');
   tabs.addEventListener('click', (e) => {
