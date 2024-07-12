@@ -63,6 +63,43 @@
   line-height: 16px;
   color: rgba(16, 38, 84, 0.5);
   cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #787878;
+    text-underline-offset: 10px;
+    color: rgba(16, 38, 84, 0.7);
+  }
+
+  &:focus {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #102654;
+    text-underline-offset: 10px;
+    color: $textprimary;
+  }
+
+  &:active {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: $buttontab;
+    text-underline-offset: 10px;
+    color: $textprimary;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #102654;
+    text-underline-offset: 10px;
+    color: $textprimary;
+  }
 
   @include media-tablet {
     font-size: 18px;
