@@ -185,7 +185,7 @@
   transform: translateX(-50%) translateY(-50%);
   cursor: pointer;
 
-  @include media-tablet {
+  @include media-desctop {
     height: 100px;
     width: 100px;
   }
