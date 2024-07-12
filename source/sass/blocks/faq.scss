@@ -181,6 +181,18 @@
   padding: 0;
   cursor: pointer;
 
+  &:hover {
+    background: url("../__spritemap#sprite-faq-plus-hover-view");
+  }
+
+  &:focus {
+    background: url("../__spritemap#sprite-faq-plus-focus-view");
+  }
+
+  &:disabled {
+    background: url("../__spritemap#sprite-faq-plus-disabled-view");
+  }
+
   @include media-tablet {
     width: 40px;
     height: 40px;
