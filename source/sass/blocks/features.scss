@@ -47,6 +47,7 @@
   }
 
   @include media-desctop {
+    width: 360px;
     gap: 0 43px;
   }
 }
@@ -60,7 +61,9 @@
 
 .features__item:nth-child(4),
 .features__item:nth-child(5) {
-  padding-top: 40px;
+  @include media-desctop {
+    padding-top: 40px;
+  }
 }
 
 .features__item-data-wrapper {
@@ -74,6 +77,7 @@
 }
 
 .features__item-data-wrapper span {
+  display: block;
   color: #2e35ac;
   font-size: 14px;
   line-height: 20px;
@@ -280,5 +284,17 @@
       ". main ."
       ". main .";
     width: 1159px;
+  }
+}
+
+.features__item:nth-child(2) {
+  @include media-mobile {
+    padding-bottom: 5px;
+  }
+}
+
+.features__item:nth-child(4) {
+  @include media-mobile {
+    padding-top: 5px;
   }
 }
