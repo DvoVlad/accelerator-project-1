@@ -43,7 +43,7 @@
   gap: 45px;
   padding-bottom: 8px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @include media-tablet {
     width: 310px;
@@ -147,8 +147,8 @@
       width: 275px;
       height: 326px;
       position: absolute;
-      bottom: -45px;
-      right: -208px;
+      bottom: -46px;
+      right: -213px;
       transform: rotate(150deg);
     }
   }
@@ -160,8 +160,8 @@
     &::after {
       width: 321px;
       height: 384px;
-      right: -200px;
-      bottom: -80px;
+      right: -198px;
+      bottom: -94px;
       background-image:
         image-set(
           "../img/rogue-desctop@1x.png" 1x,
@@ -288,6 +288,11 @@
   @include media-tablet {
     font-size: 60px;
     line-height: 90px;
+
+    &::after {
+      width: 30px;
+      height: 42px;
+    }
   }
 }
 
