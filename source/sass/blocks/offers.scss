@@ -26,7 +26,7 @@
   @include media-tablet {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 
   @include media-desctop {
@@ -85,7 +85,7 @@
   display: block;
 
   @include media-tablet {
-    font-size: 78px;
+    font-size: 70px;
     line-height: 70px;
     text-align: left;
   }
@@ -142,7 +142,7 @@
   width: 73px;
   font-size: 14px;
   line-height: 14px;
-  font-weight: 400;
+  font-weight: 700;
   color: $basewhite;
   height: 20px;
   text-transform: uppercase;
@@ -151,6 +151,8 @@
   text-underline-offset: 5px;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  padding-bottom: 4px;
 
   &:hover {
     opacity: 0.8;
@@ -291,10 +293,16 @@
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
 
   @include media-tablet {
     text-align: left;
     margin-bottom: 30px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @include media-desctop {
