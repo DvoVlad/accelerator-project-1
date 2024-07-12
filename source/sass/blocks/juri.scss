@@ -35,13 +35,34 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  color: #102654;
+  width: 50px;
+  height: 50px;
+
+  &:hover {
+    border: 1px solid #102654;
+    border-radius: 50%;
+  }
+
+  &:focus {
+    border: 1px solid #102654;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+  }
+
+  &:active {
+    color: $basewhite;
+    border: 1px solid #102654;
+    border-radius: 50%;
+    background-color: #102654;
+  }
 
   @include media-tablet {
     display: block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 0;
+    left: -20px;
     z-index: 2;
     cursor: pointer;
   }
@@ -52,13 +73,34 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  color: #102654;
+  width: 50px;
+  height: 50px;
+
+  &:hover {
+    border: 1px solid #102654;
+    border-radius: 50%;
+  }
+
+  &:focus {
+    border: 1px solid #102654;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+  }
+
+  &:active {
+    color: $basewhite;
+    border: 1px solid #102654;
+    border-radius: 50%;
+    background-color: #102654;
+  }
 
   @include media-tablet {
     display: block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 0;
+    right: -20px;
     z-index: 2;
     cursor: pointer;
   }
