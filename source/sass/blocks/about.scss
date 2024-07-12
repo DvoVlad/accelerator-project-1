@@ -41,7 +41,7 @@
 }
 
 .about__text-wrapper p:last-child {
-  margin-top: 13px;
+  margin-top: 10px;
   margin-bottom: 0;
 }
 
@@ -184,6 +184,11 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   cursor: pointer;
+
+  @include media-tablet {
+    height: 100px;
+    width: 100px;
+  }
 
   &:hover {
     background: url("../__spritemap#sprite-player-button-hover-view");
