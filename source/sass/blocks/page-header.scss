@@ -3,11 +3,11 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 16px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
 
   @include media-tablet {
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   @include media-desctop {
