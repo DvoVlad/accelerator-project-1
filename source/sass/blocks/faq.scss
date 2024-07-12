@@ -63,6 +63,22 @@
   color: $textprimary;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    border: 1px solid $buttonprimaryborder;
+  }
+
+  &:active {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: $basewhite;
+    border-color: transparent;
+  }
+
+  &:disabled {
+    color: #c8c9cc;
+    border-color: rgba(16, 38, 84, 0.2);
+  }
+
   @include media-tablet {
     font-size: 18px;
     line-height: 18px;
