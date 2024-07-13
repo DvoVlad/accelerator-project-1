@@ -21,12 +21,15 @@
   color: $textprimary;
   margin-top: 0;
   margin-bottom: 42px;
+  height: 24px;
+  box-sizing: border-box;
 
   @include media-tablet {
     font-size: 54px;
     line-height: 54px;
     margin-bottom: 36px;
     text-align: center;
+    height: auto;
   }
 
   @include media-desctop {
