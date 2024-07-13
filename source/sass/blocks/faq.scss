@@ -157,6 +157,10 @@
   }
 }
 
+.faq__accordeon--active p {
+  max-height: none;
+}
+
 .faq__title-wrapper {
   display: flex;
   flex-wrap: wrap;
