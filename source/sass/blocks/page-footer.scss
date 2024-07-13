@@ -16,6 +16,10 @@
 
 .page-footer__link-item {
   height: 20px;
+
+  @include media-tablet {
+    height: auto;
+  }
 }
 
 .page-footer__link {
@@ -79,6 +83,7 @@
 
   @include media-tablet {
     gap: 15px;
+    margin-left: auto;
   }
 
   @include media-desctop {
@@ -165,5 +170,6 @@
 
   @include media-desctop {
     gap: 167px;
+    align-items: flex-start;
   }
 }
