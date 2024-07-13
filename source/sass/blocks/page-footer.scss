@@ -14,6 +14,10 @@
   }
 }
 
+.page-footer__link-item {
+  height: 20px;
+}
+
 .page-footer__link {
   text-decoration: none;
   color: $basewhite;
@@ -50,7 +54,7 @@
   padding-right: 69px;
   margin-top: 30px;
   margin-bottom: 30px;
-  gap: 20px 25px;
+  gap: 20px 35px;
 
   @include media-tablet {
     margin-top: 0;
