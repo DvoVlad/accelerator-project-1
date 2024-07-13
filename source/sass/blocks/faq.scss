@@ -86,7 +86,9 @@
   }
 
   @include media-desctop {
-    padding: 17px 43px;
+    padding: 19px 43px;
+    box-sizing: border-box;
+    height: 54px;
   }
 }
 
@@ -105,7 +107,7 @@
   margin-top: 35px;
 
   @include media-tablet {
-    margin-top: 46px;
+    margin-top: 44px;
   }
 
   @include media-desctop {
@@ -124,13 +126,14 @@
   box-sizing: border-box;
 
   @include media-tablet {
-    max-width: none;
+    max-width: 500px;
     padding-right: 0;
     font-size: 22px;
     line-height: 22px;
   }
 
   @include media-desctop {
+    max-width: none;
     font-size: 24px;
     line-height: 24px;
   }
@@ -185,7 +188,7 @@
     margin-bottom: 10px;
   }
 
-  @include media-tablet {
+  @include media-desctop {
     margin-bottom: 23px;
   }
 }
@@ -226,8 +229,8 @@
   box-sizing: border-box;
 
   @include media-tablet {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 23px;
+    padding-bottom: 23px;
   }
 
   @include media-desctop {
