@@ -9,6 +9,7 @@
 
   @include media-desctop {
     padding-bottom: 71px;
+    border-top: 1px solid #74819c;
   }
 }
 
@@ -126,6 +127,7 @@
 }
 
 .contacts__list-data {
+  display: block;
   font-style: normal;
   margin: 0;
   font-size: 14px;

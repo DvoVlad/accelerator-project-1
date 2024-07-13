@@ -142,6 +142,10 @@
   @include media-tablet {
     padding: 27px 10px;
   }
+
+  @include media-desctop {
+    padding: 25px 10px;
+  }
 }
 
 .form__input-error {
