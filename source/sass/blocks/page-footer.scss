@@ -5,7 +5,7 @@
 
   @include media-tablet {
     padding-top: 45px;
-    padding-bottom: 48px;
+    padding-bottom: 45px;
   }
 
   @include media-desctop {
@@ -16,9 +16,14 @@
 
 .page-footer__link-item {
   height: 20px;
+  display: flex;
 
   @include media-tablet {
     height: auto;
+  }
+
+  @include media-desctop {
+    height: 23px;
   }
 }
 
@@ -64,6 +69,7 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-right: 0;
+    padding-left: 2px;
     gap: 20px 30px;
   }
 
@@ -126,6 +132,11 @@
   mask-repeat: no-repeat;
   mask-position: center center;
   background-color: #030a1a;
+
+  @include media-desctop {
+    width: 13px;
+    height: 8px;
+  }
 }
 
 .page-footer__social-link--odnk::before {
@@ -137,6 +148,11 @@
   mask-repeat: no-repeat;
   mask-position: center center;
   background-color: #030a1a;
+
+  @include media-desctop {
+    width: 9px;
+    height: 16px;
+  }
 }
 
 .page-footer__social-link--reddit::before {
@@ -170,6 +186,15 @@
 
   @include media-desctop {
     gap: 167px;
-    align-items: flex-start;
+  }
+}
+
+.page-footer__logo-wrapper {
+  @include media-tablet {
+    padding-bottom: 3px;
+  }
+
+  @include media-desctop {
+    padding-bottom: 0;
   }
 }

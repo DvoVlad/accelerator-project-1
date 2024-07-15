@@ -90,7 +90,6 @@
   box-sizing: border-box;
   padding: 0;
   padding-bottom: 3px;
-  padding-left: 4px;
 
   &:hover {
     border-bottom: 1px solid $basewhite;
@@ -112,7 +111,7 @@
   }
 
   @include media-desctop {
-    padding-bottom: 4px;
+    padding-bottom: 3px;
     width: 223px;
   }
 }
@@ -130,7 +129,9 @@
 }
 
 .form__submit {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: transparent;
   border: 2px solid $basewhite;
