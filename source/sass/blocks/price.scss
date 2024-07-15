@@ -288,6 +288,7 @@
   @include media-tablet {
     font-size: 60px;
     line-height: 90px;
+    gap: 14px;
 
     &::after {
       width: 30px;
