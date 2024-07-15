@@ -112,7 +112,7 @@
 
   @include media-desctop {
     width: 860px;
-    margin-top: 0;
+    margin-top: -1px;
   }
 }
 
@@ -124,6 +124,7 @@
   margin-bottom: 0;
   max-width: 238px;
   box-sizing: border-box;
+  color: $textprimary;
 
   @include media-tablet {
     max-width: 500px;
@@ -148,6 +149,7 @@
   overflow: hidden;
   max-height: 0;
   transition: max-height 1s;
+  color: $textprimary;
 
   @include media-tablet {
     font-size: 18px;
@@ -255,7 +257,7 @@
   @include media-desctop {
     display: flex;
     flex-wrap: wrap;
-    gap: 39px;
+    gap: 40px;
     align-items: flex-start;
   }
 }
