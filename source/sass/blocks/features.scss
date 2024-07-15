@@ -22,6 +22,7 @@
   font-size: 32px;
   line-height: 32px;
   font-weight: 600;
+  color: $textprimary;
 
   @include media-tablet {
     font-size: 42px;
@@ -62,7 +63,7 @@
 .features__item:nth-child(4),
 .features__item:nth-child(5) {
   @include media-desctop {
-    padding-top: 40px;
+    padding-top: 39px;
   }
 }
 
@@ -115,6 +116,11 @@
   @include media-tablet {
     text-align: left;
   }
+
+  @include media-desctop {
+    padding-top: 1px;
+    padding-left: 1px;
+  }
 }
 
 .features__item-text-wrapper h3 {
@@ -143,6 +149,7 @@
   font-weight: 300;
   padding-left: 45px;
   padding-right: 45px;
+  color: $textprimary;
 
   @include media-tablet {
     padding-left: 0;
@@ -283,7 +290,7 @@
     padding-right: 103px;
     gap: 0 40px;
     grid-template-columns: 360px 360px 360px;
-    grid-template-rows: 150px 150px;
+    grid-template-rows: 152px 148px;
     grid-template-areas:
       ". main ."
       ". main .";
