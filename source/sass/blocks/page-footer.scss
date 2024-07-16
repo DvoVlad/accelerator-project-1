@@ -74,7 +74,8 @@
   }
 
   @include media-desctop {
-    gap: 0 82px;
+    gap: 0 83px;
+    padding-left: 0;
   }
 }
 
@@ -126,17 +127,12 @@
 .page-footer__social-link--vk::before {
   content: " ";
   display: block;
-  width: 12px;
-  height: 7px;
+  width: 14px;
+  height: 14px;
   mask-image: url("../__spritemap#sprite-icon-vk-view");
   mask-repeat: no-repeat;
   mask-position: center center;
   background-color: #030a1a;
-
-  @include media-desctop {
-    width: 13px;
-    height: 8px;
-  }
 }
 
 .page-footer__social-link--odnk::before {
