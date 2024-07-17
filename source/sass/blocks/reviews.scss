@@ -203,8 +203,7 @@
   }
 }
 
-.reviews__slider-prev.swiper-button-disabled,
-.reviews__slider-next.swiper-button-disabled {
+.reviews__slider-disabled {
   opacity: 0.3;
   pointer-events: none;
 }

@@ -37,6 +37,7 @@ new Swiper('.juri__swiper', {
 new Swiper('.reviews__swiper', {
   // configure Swiper to use modules
   navigation: {
+    disabledClass: 'reviews__slider-disabled',
     nextEl: '.reviews__slider-next',
     prevEl: '.reviews__slider-prev',
   },
