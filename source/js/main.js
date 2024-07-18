@@ -28,7 +28,8 @@ new Swiper('.juri__swiper', {
     // when window width is >= 640px
     1160: {
       slidesPerView: 4,
-      spaceBetween: 40
+      spaceBetween: 40,
+      allowTouchMove: false
     }
   },
   breakpointsBase: 'container'
@@ -42,6 +43,12 @@ new Swiper('.reviews__swiper', {
     prevEl: '.reviews__slider-prev',
   },
   loop: false,
-  slidesPerView: 1
+  slidesPerView: 1,
+  breakpoints: {
+    560: {
+      allowTouchMove: false
+    }
+  },
+  breakpointsBase: 'container'
 });
 
