@@ -40,6 +40,9 @@
   background-color: $backgroundbanners;
   padding-top: 30px;
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @include media-tablet {
     padding-top: 40px;
@@ -47,6 +50,7 @@
     padding-left: 25px;
     padding-right: 25px;
     width: 228px;
+    align-items: flex-start;
   }
 
   @include media-desctop {
@@ -141,13 +145,11 @@
 
 .offers__button {
   display: flex;
-  margin: 0 auto;
-  width: 73px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 700;
   color: $basewhite;
-  height: 20px;
+  min-height: 20px;
   text-transform: uppercase;
   text-decoration-thickness: 1px;
   text-decoration-color: $basewhite;
@@ -155,7 +157,6 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding-bottom: 4px;
 
   &:hover {
     opacity: 0.8;
@@ -252,16 +253,18 @@
   margin-bottom: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 
   @include media-tablet {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     margin-bottom: 0;
     padding-left: 20px;
     padding-right: 20px;
     width: 324px;
     box-sizing: border-box;
+    align-items: flex-start;
   }
 
   @include media-desctop {
