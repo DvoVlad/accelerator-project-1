@@ -7,6 +7,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @include media-desctop {
+    box-sizing: border-box;
+    height: 338px;
+  }
 }
 
 .form__title {

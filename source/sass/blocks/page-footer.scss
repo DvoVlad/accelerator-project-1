@@ -52,6 +52,10 @@
   @include media-tablet {
     line-height: 22px;
   }
+
+  /* @include media-desctop {
+    transform: scaleY(0.88) scaleX(1.02) translateY(-2px); // scaleY(0.9) scaleX(1.03) translateY(-2px)
+  } */
 }
 
 .page-footer__nav-list {
@@ -127,8 +131,8 @@
 .page-footer__social-link--vk::before {
   content: " ";
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   mask-image: url("../__spritemap#sprite-icon-vk-view");
   mask-repeat: no-repeat;
   mask-position: center center;
@@ -146,8 +150,8 @@
   background-color: #030a1a;
 
   @include media-desctop {
-    width: 9px;
-    height: 16px;
+    width: 10px;
+    height: 18px;
   }
 }
 

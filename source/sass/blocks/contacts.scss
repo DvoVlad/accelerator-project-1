@@ -10,6 +10,8 @@
   @include media-desctop {
     padding-bottom: 71px;
     border-top: 1px solid #74819c;
+    box-sizing: border-box;
+    height: 338px;
   }
 }
 
