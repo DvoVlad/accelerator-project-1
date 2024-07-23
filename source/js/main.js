@@ -51,4 +51,3 @@ new Swiper('.reviews__swiper', {
   },
   breakpointsBase: 'container'
 });
-

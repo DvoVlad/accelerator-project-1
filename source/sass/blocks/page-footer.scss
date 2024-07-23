@@ -53,9 +53,11 @@
     line-height: 22px;
   }
 
-  /* @include media-desctop {
-    transform: scaleY(0.88) scaleX(1.02) translateY(-2px); // scaleY(0.9) scaleX(1.03) translateY(-2px)
-  } */
+  @include media-desctop {
+    // transform: scaleY(0.88) scaleX(1.02) translateY(-2px); // scaleY(0.9) scaleX(1.03) translateY(-2px)
+    position: relative;
+    top: -1px;
+  }
 }
 
 .page-footer__nav-list {
