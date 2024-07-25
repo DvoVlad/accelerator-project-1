@@ -201,6 +201,14 @@
   }
 }
 
+.offers__button--disabled {
+  opacity: 0.5;
+}
+
+.offers__button--primary.offers__button--disabled {
+  opacity: 0.3;
+}
+
 .offers__image-wrapper {
   margin: 0 auto;
   width: 320px;

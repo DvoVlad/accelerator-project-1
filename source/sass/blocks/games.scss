@@ -260,6 +260,10 @@
   }
 }
 
+.games__button--disabled {
+  opacity: 0.5;
+}
+
 .games__preview {
   display: block;
 }
