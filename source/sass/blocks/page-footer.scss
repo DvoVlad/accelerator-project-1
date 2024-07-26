@@ -129,6 +129,10 @@
   }
 }
 
+.page-footer__social-link--disabled {
+  opacity: 0.3;
+}
+
 .page-footer__social-link--vk::before {
   content: " ";
   display: block;
