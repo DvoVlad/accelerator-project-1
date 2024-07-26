@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
     uploadVideoButton.remove();
     const videoIframe = document.createElement('iframe');
     videoIframe.classList.add('about__video');
-    videoIframe.src = 'https://www.youtube.com/embed/9TZXsZItgdw?si=tJpCEikTAfWTN1tk';
+    videoIframe.src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1';
     videoIframe.frameBorder = 0;
     previewWrapper.appendChild(videoIframe);
     previewWrapper.classList.add('about__preview-wrapper--no-background');
